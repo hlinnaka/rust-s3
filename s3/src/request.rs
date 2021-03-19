@@ -14,7 +14,7 @@ use crate::command::HttpMethod;
 use crate::request_trait::Request;
 use crate::{Result, S3Error};
 
-use tokio::stream::StreamExt;
+use tokio_stream::StreamExt;
 
 impl std::convert::From<reqwest::Error> for S3Error {
     fn from(e: reqwest::Error) -> S3Error {
